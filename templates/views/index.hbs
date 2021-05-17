@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        @font-face
+{
+    font-family: ralway-black;
+    src: url(../fonts/Raleway-Black.ttf);
+}
+.welcome
+{
+    font-family:ralway-black;
+    padding:1rem 2.5rem;
+    margin:2px 2px;
+    color:rgb(240, 8, 8)
+}
+        :root{
+    --primary:#EEBF00;
+    --secondary:#232838;
+    --heaven:#FFFFFF;
+    
+      }
+        body{
+            background-image: url('https://cdn1.vectorstock.com/i/1000x1000/92/25/welcome-paper-poster-with-colorful-brush-strokes-vector-21849225.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            min-height:100vh;
+            width:100vw;
+            margin-top:10px;
+        }
+        .container
+        {
+            width:100%;
+            padding:15 15px;
+        
+        }
+        .flex
+        {
+            display:flex;
+        }
+        header .navbar a{
+    text-decoration: none;
+    color:var(--secondary);
+    font-family:"ralway-semibold";
+    font-size:1rem;
+    padding:1rem 1.5rem;
+    transition:all .3s ease;
+}
+header .navbar a.active{
+    background: var(--primary);
+    color:var(--pure);
+}
+header .navbar a:hover{
+    background:var(--primary);
+    color:var(--pure);
+
+}
+.magic-shadow{
+    position:relative;
+    background:var(--heaven);
+}
+.magic-shadow:after{
+    content:'';
+    display:block;
+    width:100%;
+    height:69px;
+    background-image: url(../icons/shadow.svg);
+    bottom:-22px;
+    position:absolute;
+    background-repeat: no-repeat;
+    z-index:-1;
+    background-position: center;
+}
+.justify-center{
+    justify-content: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="welcome">
+            <h1>Welcome To Pietech</h1>
+        </div>
+        <div class="navbar magic-shadow" >
+            <div class="container flex justify-center">
+                <a href="#" class="active">Home</a>
+                <a href="#">About Us</a>
+                <a href="./loign.html">Login</a>
+                <a href="./register.html">Sign Up</a>
+                
+            </div>
+        </div>
+    </header>
+</body>
+</html>
